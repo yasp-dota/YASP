@@ -47,6 +47,7 @@ function getParseSchema() {
       obs_left_log: [],
       sen_left_log: [],
       purchase_log: [],
+      starting_items: [],
       kills_log: [],
       buyback_log: [],
       runes_log: [],
@@ -119,7 +120,6 @@ function createParsedDataBlob(entries, matchId, doLogParse) {
     parsedData.logs = processLogParse(entries, meta);
   }
   logConsole.timeEnd('doLogParse');
-
   return parsedData;
 }
 

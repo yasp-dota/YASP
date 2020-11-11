@@ -76,6 +76,7 @@ CREATE TABLE IF NOT EXISTS player_matches (
   sen_log text,
   obs_left_log text,
   sen_left_log text,
+  starting_items text,
   purchase_log text,
   kills_log text,
   buyback_log text,

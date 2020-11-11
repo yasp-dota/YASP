@@ -90,6 +90,7 @@ CREATE TABLE IF NOT EXISTS player_matches (
   sen_log json[],
   obs_left_log json[],
   sen_left_log json[],
+  starting_items json[],
   purchase_log json[],
   kills_log json[],
   buyback_log json[],

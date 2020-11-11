@@ -57,11 +57,18 @@ function populate(e, container) {
         let arrEntry;
         if (e.interval) {
           arrEntry = e.value;
-        } else if (e.type === 'purchase_log' || e.type === 'kills_log' || e.type === 'runes_log') {
+        } else if (e.type === 'starting_items' || e.type === 'purchase_log' || e.type === 'kills_log' || e.type === 'runes_log') {
           arrEntry = {
             time: e.time,
             key: e.key,
           };
+          if (e.type === 'starting_items') {
+            arrEntry = {
+              key: e.key,
+              itemslot: e.itemslot,
+              charges: e.charges,
+            };
+          }
           if (e.type === 'kills_log' && e.tracked_death) {
             arrEntry = Object.assign({}, {
               tracked_death: e.tracked_death,

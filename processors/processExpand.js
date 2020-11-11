@@ -254,6 +254,20 @@ function processExpand(entries, meta) {
         type: 'xp_reasons',
       });
     },
+    STARTING_ITEM(e) {
+      // starting items
+      const unit = e.targetname;
+      const key = translate(e.valuename);
+      expand({
+        time: e.time,
+        value: 1,
+        unit,
+        key,
+        charges: e.charges,
+        itemslot: e.itemslot,
+        type: 'starting_items',
+      });
+    },
     DOTA_COMBATLOG_PURCHASE(e) {
       // purchase
       const unit = e.targetname;

@@ -621,7 +621,7 @@ You can find data that can be used to convert hero and ability IDs and other inf
                               type: 'integer',
                             },
                             key: {
-                              description: 'Integer item ID',
+                              description: 'String item name',
                               type: 'string',
                             },
                           },
@@ -676,6 +676,27 @@ You can find data that can be used to convert hero and ability IDs and other inf
                       sen_placed: {
                         description: 'How many sentries were placed by the player',
                         type: 'integer',
+                      },
+                      starting_items: {
+                        description: 'Object containing information on items at the start of the game',
+                        type: 'array',
+                        items: {
+                          type: 'object',
+                          properties: {
+                            key: {
+                              description: 'Item name',
+                              type: 'string',
+                            },
+                            itemslot: {
+                              description: 'Inventory slot the item was in',
+                              type: 'integer',
+                            },
+                            charges: {
+                              description: 'Amount of charges an item has',
+                              type: 'integer',
+                            },
+                          },
+                        },
                       },
                       stuns: {
                         description: 'Total stun duration of all stuns by the player',
