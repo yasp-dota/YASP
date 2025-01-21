@@ -80,7 +80,7 @@
     "@types/supertest": "^6.0.2",
     "@types/ws": "^8.5.13",
     "@typescript-eslint/eslint-plugin": "^8.19.1",
-    "@typescript-eslint/parser": "^8.19.1",
+    "@typescript-eslint/parser": "^8.21.0",
     "eslint": "^9.17.0",
     "mocha": "^11.0.1",
     "nock": "^13.5.6",
