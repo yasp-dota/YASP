@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "OpenDota",
+  "name_for_human": "OpenDota Plugin",
+  "description_for_human": "Retrieve and analyze Dota 2 statistics from OpenDota.com",
+  "description_for_model": "Use this plugin to create a comprehensive summary for a user interested in Dota 2, focusing on the current meta, popular heroes, and item builds. Additionally, include specific statistics and insights about a player with the account ID supplied by the user. To gather the required information, use the OpenDota API endpoints for hero trends, meta, item, and player data. Present the user with an engaging and informative overview of the current state of the game, as well as the player's performance, most played heroes, and preferred items.",
+  "api": {
+    "type": "openapi",
+    "url": "https://github.com/odota/core/.well-known/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://github.com/odota/web/blob/master/public/assets/images/logo.png",
+  "contact_email": "api@opendota.com",
+  "legal_info_url": "https://github.com/odota"
+}
