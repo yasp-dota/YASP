@@ -73,7 +73,7 @@
     "@types/node": "^22.10.5",
     "@types/passport": "^1.0.17",
     "@types/passport-steam": "^1.0.6",
-    "@types/pg": "^8.11.10",
+    "@types/pg": "^8.11.11",
     "@types/qs": "^6.9.17",
     "@types/request": "^2.48.12",
     "@types/steam-user": "^5.0.4",
