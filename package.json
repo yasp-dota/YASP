@@ -79,7 +79,7 @@
     "@types/steam-user": "^5.0.4",
     "@types/supertest": "^6.0.2",
     "@types/ws": "^8.5.13",
-    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
     "@typescript-eslint/parser": "^8.23.0",
     "eslint": "^9.19.0",
     "mocha": "^11.0.1",
